@@ -42,6 +42,11 @@ $(document).ready(function () {
     $('.hidden-menu').slideToggle('slow');
   });
 
+   // Hidden menu toggle
+  $('#show-hidden-menu-table-content').click(function () {
+    $('.hidden-menu-table-content').slideToggle('slow');
+  });
+
   // Form focus styling
   $('input,textarea').val('');
   $('.form-group input, .form-group textarea, .form-group select').focusout(function () {
