@@ -585,3 +585,71 @@ a:focus{
 .treatment_all_comm_div.video_testmonilas_section #blog_testimonilas_slider .owl-prev{left:-5px; background-color: transparent !important;}
 .treatment_all_comm_div.video_testmonilas_section #blog_testimonilas_slider .owl-next{right:-5px; background-color: transparent !important;}
 }
+
+
+/*==========================================*/
+/* table of content css*/
+/*==========================================*/
+.treatment_all_comm_div.table_of_content_list_section{
+    margin-top: 20px;
+}
+.treatment_all_comm_div.table_of_content_list_section ul {
+    margin-bottom: 0;
+    padding-inline-start: 0px;
+    list-style: decimal-leading-zero;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 12px; /* Add spacing between list items */
+}
+
+.treatment_all_comm_div.table_of_content_list_section ul li {
+    margin-bottom: 5px;
+    display: flex;  /* Ensures inline content is structured properly */
+    align-items: center;
+    position: relative;
+}
+
+.treatment_all_comm_div.table_of_content_list_section ul li a {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 300;
+    position: relative;
+    padding: 0 10px; /* Add padding on left and right */
+}
+
+.treatment_all_comm_div.table_of_content_list_section ul li:not(:last-child) a::after {
+    content: '';
+    height: 12px;
+    width: 1px;
+    background: #212121;
+    position: absolute;
+    right: -6px; /* Controls space between text and separator */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.treatment_all_comm_div.table_of_content_list_section ul li a:hover {
+    color: #154778;
+}
+
+@media screen and (max-width:600px){
+    .treatment_all_comm_div.table_of_content_list_section{
+    margin-top: 15px;
+}
+.treatment_all_comm_div.table_of_content_list_section ul {
+    margin-bottom: 0;
+    padding-inline-start: 0px;
+    list-style: decimal-leading-zero;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0px;
+}
+.treatment_all_comm_div.table_of_content_list_section ul li:not(:last-child) a::after{
+    content: none;
+}
+
+.treatment_all_comm_div.table_of_content_list_section ul li a{
+    padding: 0 0px;
+}
+
+}
