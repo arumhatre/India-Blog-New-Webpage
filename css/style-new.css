@@ -595,8 +595,14 @@ a:focus{
 .treatment_all_comm_div.table_of_content_list_section ul li:not(:last-child) a::after{content:'';height:12px;width:1px;background:#212121;position:absolute;right:-6px;top:50%;transform:translateY(-50%)}
 .treatment_all_comm_div.table_of_content_list_section ul li a:hover{color:#154778}
 @media screen and (max-width:600px){
+    .treatment_all_comm_div.table_of_content_list_section ul li {
+    margin-bottom: 5px;
+    display: revert-layer;
+    align-items: center;
+    position: relative;
+}
 .treatment_all_comm_div.table_of_content_list_section{margin-top:15px}
-.treatment_all_comm_div.table_of_content_list_section ul{margin-bottom:0;padding-inline-start:0px;list-style:decimal-leading-zero;display:flex;flex-wrap:wrap;gap:4px 0}
+.treatment_all_comm_div.table_of_content_list_section ul{list-style: disc; margin-bottom:0;padding-inline-start:20px;display:flex;flex-wrap:wrap;gap:4px 0}
 .treatment_all_comm_div.table_of_content_list_section ul li:not(:last-child) a::after{content:none}
 .treatment_all_comm_div.table_of_content_list_section ul li a{padding:0 0}
 }
@@ -655,6 +661,7 @@ a:focus{
 /*==========================================*/
 /*.treatment_all_comm_div  treadingblogs_slider section css*/
 /*==========================================*/
+.treatment_all_comm_div.treadingblogs_slider_section_css{margin-top: 40px;}
 .treatment_all_comm_div .treadingblogs_slider .owl-item .item{margin-bottom:20px;margin-top:20px;text-align:center;border-radius:16px;color:#fff}
 .treatment_all_comm_div .treadingblogs_slider .owl-item .item{-webkit-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8);opacity:1;background-color:#f6f7fb;color:#212121!important}
 .treatment_all_comm_div .treadingblogs_slider .owl-item.center .item{-webkit-transform:scale(1.15);-ms-transform:scale(1.15);transform:scale(1.15);opacity:1;background-color:#0c4475;color:#fff!important}
@@ -667,6 +674,7 @@ a:focus{
 .treatment_all_comm_div .treadingblogs_slider .owl-item .item a{text-align:left;font-size:16px;line-height:normal;color:#212121}
 .treatment_all_comm_div .treadingblogs_slider .owl-item.center a{color:#fff}
 @media (max-width:600px){
+.treatment_all_comm_div.treadingblogs_slider_section_css{margin-top: 30px;}
 .treatment_all_comm_div .treadingblogs_slider .owl-item.center .item{-webkit-transform:none;-ms-transform:none;margin-top:0;margin-bottom:0;transform:none;opacity:1;background-color:#0c4475;color:#fff!important}
 .treatment_all_comm_div .treadingblogs_slider .owl-item.center .item img{-webkit-transform:none;-ms-transform:none;transform:none;opacity:1}
 .treatment_all_comm_div .treadingblogs_slider .owl-item .item{margin-bottom:-5px;margin-top:20px;text-align:center;border-radius:16px;color:#fff}
